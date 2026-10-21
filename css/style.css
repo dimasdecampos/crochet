@@ -185,8 +185,8 @@ p { margin: 0 0 1em; }
 .wave { position: absolute; bottom: -1px; left: 0; width: 100%; height: 90px; fill: var(--branco); }
 
 /* ---------- Sobre ---------- */
-.about { display: grid; grid-template-columns: .9fr 1.1fr; gap: 4rem; align-items: center; }
-.about__image { position: relative; }
+.about { display: grid; grid-template-columns: .9fr 1.1fr; gap: 4rem; align-items: stretch; }
+.about__image { position: relative; min-height: 420px; }
 .about__badge {
   position: absolute; right: -1rem; bottom: 2rem;
   background: var(--terracota); color: var(--branco);
@@ -209,7 +209,7 @@ p { margin: 0 0 1em; }
   box-shadow: var(--sombra);
 }
 .photo-placeholder svg { width: 90px; fill: none; stroke: var(--terracota); stroke-width: 2.5; stroke-linecap: round; }
-.about__image img { border-radius: 200px 200px var(--radius) var(--radius); aspect-ratio: 3/4; object-fit: cover; object-position: center 20%; width: 100%; box-shadow: var(--sombra); }
+.about__image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 25%; border-radius: 200px 200px var(--radius) var(--radius); box-shadow: var(--sombra); }
 
 .features { list-style: none; padding: 0; margin: 2rem 0 0; display: grid; gap: 1rem; }
 .features li {
@@ -379,7 +379,7 @@ p { margin: 0 0 1em; }
   .hero__actions { justify-content: center; }
   .hero__circle { width: min(320px, 72vw); }
   .about { gap: 3rem; }
-  .about__image { max-width: 420px; margin-inline: auto; width: 100%; }
+  .about__image { max-width: 380px; margin-inline: auto; width: 100%; min-height: 0; aspect-ratio: 3 / 4; }
   .steps, .testimonials { grid-template-columns: 1fr; max-width: 560px; margin-inline: auto; }
   .contact { text-align: center; }
 }
