@@ -97,9 +97,9 @@ p { margin: 0 0 1em; }
 .eyebrow::before { content: "✦ "; }
 .eyebrow--light { color: var(--rose-claro); }
 
-.section { padding: clamp(4.5rem, 9vw, 7rem) 0; position: relative; }
+.section { padding: clamp(2.5rem, 5vw, 4rem) 0; position: relative; }
 .section--white { background: var(--branco); }
-.section__head { text-align: center; max-width: 640px; margin: 0 auto 3rem; }
+.section__head { text-align: center; max-width: 640px; margin: 0 auto 2rem; }
 .section__head p { color: var(--texto-suave); }
 
 /* ---------- Cabeçalho ---------- */
@@ -150,7 +150,7 @@ p { margin: 0 0 1em; }
 
   display: flex;
   align-items: center;
-  padding: 5rem 0 8rem;
+  padding: 3rem 0 6rem;
   background:
     radial-gradient(circle at 85% 20%, var(--rose) 0, transparent 40%),
     radial-gradient(circle at 10% 90%, var(--rose-claro) 0, transparent 45%),
@@ -182,10 +182,10 @@ p { margin: 0 0 1em; }
   50% { transform: translateY(-14px); }
 }
 
-.wave { position: absolute; bottom: -1px; left: 0; width: 100%; height: 90px; fill: var(--creme); }
+.wave { position: absolute; bottom: -1px; left: 0; width: 100%; height: 60px; fill: var(--creme); }
 
 /* ---------- Sobre ---------- */
-#sobre { padding-top: calc(var(--header-h) + clamp(2.5rem, 6vw, 4.5rem)); }
+#sobre { padding-top: calc(var(--header-h) + clamp(1rem, 2.5vw, 2rem)); }
 .about { display: grid; grid-template-columns: .9fr 1.1fr; gap: 4rem; align-items: stretch; }
 .about__image { position: relative; min-height: 420px; }
 .about__badge {
@@ -223,7 +223,7 @@ p { margin: 0 0 1em; }
 }
 
 /* ---------- Filtros ---------- */
-.filters { display: flex; justify-content: center; flex-wrap: wrap; gap: .7rem; margin-bottom: 2.5rem; }
+.filters { display: flex; justify-content: center; flex-wrap: wrap; gap: .7rem; margin-bottom: 1.8rem; }
 .filter {
   font: inherit; font-weight: 700; font-size: 1rem;
   padding: .6rem 1.5rem; border-radius: 999px; cursor: pointer;
