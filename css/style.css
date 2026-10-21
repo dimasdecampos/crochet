@@ -20,7 +20,7 @@
   --radius: 22px;
   --sombra: 0 10px 30px rgba(143, 90, 69, 0.12);
   --sombra-forte: 0 18px 45px rgba(143, 90, 69, 0.22);
-  --header-h: 76px;
+  --header-h: 92px;
 }
 
 *,
@@ -119,8 +119,8 @@ p { margin: 0 0 1em; }
 .header__inner { height: 100%; display: flex; align-items: center; justify-content: space-between; }
 
 .brand { display: flex; align-items: center; gap: .7rem; }
-.brand__logo { width: 48px; height: 48px; }
-.brand__name { font-family: var(--font-titulo); font-size: 1.6rem; font-weight: 700; color: var(--terracota-escuro); }
+.brand__logo { width: 68px; height: 68px; }
+.brand__name { font-family: var(--font-titulo); font-size: 2.2rem; font-weight: 700; color: var(--terracota-escuro); }
 .brand__name em { color: var(--terracota); font-weight: 500; }
 
 .nav { display: flex; align-items: center; gap: 2rem; }
@@ -401,9 +401,10 @@ p { margin: 0 0 1em; }
 }
 
 @media (max-width: 480px) {
+  :root { --header-h: 76px; }
   body { font-size: 1.07rem; }
-  .brand__name { font-size: 1.35rem; }
-  .brand__logo { width: 40px; height: 40px; }
+  .brand__name { font-size: 1.7rem; }
+  .brand__logo { width: 54px; height: 54px; }
   .hero__actions .btn { width: 100%; }
   .grid { grid-template-columns: 1fr; }
   .about__badge { width: 110px; height: 110px; right: 0; }
